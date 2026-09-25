@@ -7,42 +7,40 @@
 
 body {
     min-height: 100vh;
-    background-color: #bdb495;
+    background-color: #f8f2ce;
 }
 
 .menu-lateral {
     width: 20%;
     height: 100vh;
-    background-color: #f8f2ce;
+    background-color: #bdb495;
 }
+.menu-opcoes a {
+    display: block;
 
+    width: 80%;
+    margin: 0 auto 10px auto;
+
+    text-align: center;
+
+    background-color: #d8d989;
+    color: #493d3f;
+
+    padding: 12px;
+
+    text-decoration: none;
+
+    border-radius: 12px;
+}
 .menu-lateral h1 {
     color: #493d3f;
     text-align: center;
     padding: 20px;
 }
-.opcao-clientes {
-    text-align: center;
-    display: block;
-    background-color: #bdb495;
-    color: #493d3f;
-    padding: 15px;
-    margin-bottom: 10px;
-    text-decoration: none;
-}
-.opcao-OS {
-    text-align: center;
-    display: block;
-    background-color: #bdb495;
-    color: #493d3f;
-    padding: 15px;
-    margin-bottom: 10px;
-    text-decoration: none;
-}
 .menu-lateral-clientes {
     width: 20%;
     height: 100vh;
-    background-color: #f8f2ce;
+    background-color: #BDB495;
 }
 .menu-opcao-inicial {
     text-align: center;
@@ -58,12 +56,197 @@ body {
     text-align: center;
     padding: 20px;
 }
-.opcao-Inspecoes {
-    text-align: center;
-    display: block;
-    background-color: #bdb495;
+.cabecalho {
+    position: absolute;
+    top: 0;
+    left: 20%;
+    width: 80%;
+    height: 79px;
+    background-color: #d8d989;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    border-bottom: 2px solid #bdb495;
+    border: px
+}
+.titulo-dashboard {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.titulo-dashboard i {
+    font-size: 28px;
     color: #493d3f;
-    padding: 15px;
-    margin-bottom: 10px;
-    text-decoration: none;
+}
+
+.titulo-dashboard h2 {
+    margin: 0;
+
+    font-size: 28px;
+    color: #493d3f;
+}
+.usuario {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    color: #493d3f;
+    font-size: 18px;
+}
+
+.usuario i {
+    font-size: 30px;
+}
+
+.area-dashboard {
+    position: absolute;
+
+    top: 130px;
+    left: 20%;
+
+    width: 80%;
+
+    padding: 20px 40px;
+}
+
+.card-dashboard {
+    background-color: #f8f2ce;
+
+    min-height: 130px;
+
+    border-radius: 15px;
+
+    padding: 20px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 18px;
+
+    box-shadow: 0 3px 8px rgba(73, 61, 63, 0.15);
+
+    transition: 0.2s;
+}
+
+
+.card-dashboard:hover {
+    transform: translateY(-3px);
+}
+
+.icone-card {
+    width: 55px;
+    height: 55px;
+
+    border-radius: 12px;
+
+    background-color: #bdb495;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icone-card i {
+    font-size: 25px;
+    color: #493d3f;
+}
+
+
+
+.card-dashboard h3 {
+    margin: 0;
+
+    color: #493d3f;
+
+    font-size: 18px;
+}
+
+.card-dashboard p {
+    margin: 5px 0 0;
+
+    color: #493d3f;
+
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.quadro-progressao {
+    background-color: #f8f2ce;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 3px 8px rgba(73, 61, 63, 0.15);
+}
+
+.titulo-quadro {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.titulo-quadro i {
+    font-size: 23px;
+    color: #493d3f;
+}
+
+.titulo-quadro h3 {
+    margin: 0;
+    color: #493d3f;
+    font-size: 21px;
+}
+
+
+.progresso-item {
+    margin-bottom: 20px;
+}
+
+.progresso-item:last-child {
+    margin-bottom: 0;
+}
+
+.progresso-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 7px;
+    color: #493d3f;
+}
+
+.progresso-info span {
+    font-size: 15px;
+}
+
+.progresso-info strong {
+    font-size: 16px;
+}
+
+
+.barra {
+    width: 100%;
+    height: 12px;
+    background-color: #bdb495;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.barra-preenchida {
+    height: 100%;
+    border-radius: 20px;
+}
+
+
+.pendentes {
+    width: 45%;
+    background-color: #493d3f;
+}
+
+.andamento {
+    width: 25%;
+    background-color: #d8d989;
+}
+
+.concluidas {
+    width: 85%;
+    background-color: #8f9160;
 }
