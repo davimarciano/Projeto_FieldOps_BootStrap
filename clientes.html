@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="pt-br">
+    <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard / FieldOps</title>
@@ -30,13 +30,150 @@
     <header class="cabecalho">
 
         <div class="titulo-dashboard">
-            <i class="bi bi-speedometer2"></i>
-            <h2>Dashboard</h2>
+            <i class="bi bi-people-fill"></i>
+            <h2>Clientes</h2>
         </div>
 
         <div class="usuario">
             <i class="bi bi-person-circle"></i>
             <span>Usuário</span>
         </div>
+    </header>
+    <div class="area-clientes">
+
+    <div class="titulo-clientes">
+        <h3>Clientes</h3>
+        <p>Gerencie os clientes cadastrados no sistema.</p>
+    </div>
+
+    <div class="row g-4">
+
+        <div class="col-12 col-md-6">
+
+            <div class="card-clientes">
+
+                <div class="icone-card">
+                    <i class="bi bi-people-fill"></i>
+                </div>
+
+                <div>
+                    <h4>Total de clientes</h4>
+                    <p>24</p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="col-12 col-md-6">
+
+            <div class="card-novo-cliente">
+
+                <i class="bi bi-person-plus-fill"></i>
+
+                <span>Novo Cliente</span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="quadro-clientes">
+
+        <div class="titulo-quadro">
+            <i class="bi bi-list-ul"></i>
+            <h3>Clientes cadastrados</h3>
+        </div>
+
+        <div class="table-responsive">
+
+            <table class="table tabela-clientes">
+
+                <thead>
+                    <tr>
+                        <th>Cliente</th>
+                        <th>Telefone</th>
+                        <th>Cidade</th>
+                        <th>Status</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>Roberto do gas</td>
+                        <td>(11) 99999-1111</td>
+                        <td>Itu</td>
+                        <td>
+                            <span class="status-cliente ativo">
+                                Ativo
+                            </span>
+                        </td>
+                        <td>
+                            <i class="bi bi-eye acao-cliente"></i>
+                            <i class="bi bi-pencil acao-cliente"></i>
+                            <i class="bi bi-trash acao-cliente"></i>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Lucio equipamentos</td>
+                        <td>(11) 98888-2222</td>
+                        <td>Salto</td>
+                        <td>
+                            <span class="status-cliente ativo">
+                                Ativo
+                            </span>
+                        </td>
+                        <td>
+                            <i class="bi bi-eye acao-cliente"></i>
+                            <i class="bi bi-pencil acao-cliente"></i>
+                            <i class="bi bi-trash acao-cliente"></i>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Indústria borabil</td>
+                        <td>(11) 97777-3333</td>
+                        <td>Itu</td>
+                        <td>
+                            <span class="status-cliente ativo">
+                                Ativo
+                            </span>
+                        </td>
+                        <td>
+                            <i class="bi bi-eye acao-cliente"></i>
+                            <i class="bi bi-pencil acao-cliente"></i>
+                            <i class="bi bi-trash acao-cliente"></i>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>davi marciano</td>
+                        <td>(11) 96666-4444</td>
+                        <td>Cabreúva</td>
+                        <td>
+                            <span class="status-cliente inativo">
+                                Inativo
+                            </span>
+                        </td>
+                        <td>
+                            <i class="bi bi-eye acao-cliente"></i>
+                            <i class="bi bi-pencil acao-cliente"></i>
+                            <i class="bi bi-trash acao-cliente"></i>
+                        </td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+</div>
 </body>
 </html>
