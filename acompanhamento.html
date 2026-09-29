@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acompanhamento / FieldOps</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="menu-lateral">
+
+        <h1>Acompanhamento</h1>
+
+        <div class="menu-opcoes">
+
+            <a href="index.html" class="menu-opcao-inicial">
+                Menu Inicial
+            </a>
+
+            <a href="clientes.html" class="opcao-clientes">
+                <i class="bi bi-people-fill"></i>
+                Clientes
+            </a>
+
+            <a href="inspecoes.html" class="opcao-Inspecoes">
+                <i class="bi bi-search"></i>
+                Inspeções
+            </a>
+
+            <a href="checklist.html" class="opcao-checklist">
+                <i class="bi bi-clipboard-check"></i>
+                Check List
+            </a>
+
+        </div>
+
+    </div>
+
+    <header class="cabecalho">
+
+        <div class="titulo-dashboard">
+
+            <i class="bi bi-clipboard-data"></i>
+
+            <h2>Acompanhamento das Inspeções</h2>
+
+        </div>
+
+        <div class="usuario">
+
+            <i class="bi bi-person-circle"></i>
+
+            <span>Usuário</span>
+
+        </div>
+
+    </header>
+
+
+    <main class="area-acompanhamento">
+
+
+        <div class="titulo-acompanhamento">
+
+            <h3>Acompanhamento das Inspeções</h3>
+
+            <p>
+                Consulte e acompanhe o andamento das inspeções planejadas e realizadas.
+            </p>
+
+        </div>
+
+
+        <div class="row g-4 mb-4">
+
+
+            <div class="col-12 col-sm-6 col-xl-3">
+
+                <div class="card-acompanhamento">
+
+                    <div class="icone-acompanhamento">
+                        <i class="bi bi-calendar-check"></i>
+                    </div>
+
+                    <div>
+
+                        <h4>Planejadas</h4>
+
+                        <p>8</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-12 col-sm-6 col-xl-3">
+
+                <div class="card-acompanhamento">
+
+                    <div class="icone-acompanhamento">
+                        <i class="bi bi-arrow-repeat"></i>
+                    </div>
+
+                    <div>
+
+                        <h4>Em andamento</h4>
+
+                        <p>3</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-12 col-sm-6 col-xl-3">
+
+                <div class="card-acompanhamento">
+
+                    <div class="icone-acompanhamento">
+                        <i class="bi bi-hourglass-split"></i>
+                    </div>
+
+                    <div>
+
+                        <h4>Aguardando revisão</h4>
+
+                        <p>2</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-12 col-sm-6 col-xl-3">
+
+                <div class="card-acompanhamento">
+
+                    <div class="icone-acompanhamento">
+                        <i class="bi bi-check-circle"></i>
+                    </div>
+
+                    <div>
+
+                        <h4>Aprovadas</h4>
+
+                        <p>15</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="quadro-filtros">
+
+            <div class="titulo-quadro">
+
+                <i class="bi bi-funnel"></i>
+
+                <h3>Filtros</h3>
+
+            </div>
+
+
+            <div class="row g-3">
+
+
+                <div class="col-12 col-md-6 col-xl-3">
+
+                    <label for="filtro-status" class="form-label">
+                        Status
+                    </label>
+
+                    <select id="filtro-status" class="form-select">
+
+                        <option>Todos</option>
+
+                        <option>Planejada</option>
+
+                        <option>Em andamento</option>
+
+                        <option>Aguardando revisão</option>
+
+                        <option>Aprovada</option>
+
+                        <option>Reprovada</option>
+
+                        <option>Cancelada</option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="col-12 col-md-6 col-xl-3">
+
+                    <label for="filtro-cliente" class="form-label">
+                        Cliente
+                    </label>
+
+                    <select id="filtro-cliente" class="form-select">
+
+                        <option>Todos</option>
+
+                        <option>Empresa ABC</option>
+
+                        <option>Indústria XYZ</option>
+
+                        <option>Metalúrgica Itu</option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="col-12 col-md-6 col-xl-3">
+
+                    <label for="filtro-tecnico" class="form-label">
+                        Técnico
+                    </label>
+
+                    <select id="filtro-tecnico" class="form-select">
+
+                        <option>Todos</option>
+
+                        <option>João Silva</option>
+
+                        <option>Carlos Oliveira</option>
+
+                        <option>Marcos Santos</option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="col-12 col-md-6 col-xl-3">
+
+                    <label for="filtro-periodo" class="form-label">
+                        Período
+                    </label>
+
+                    <input
+                        type="date"
+                        id="filtro-periodo"
+                        class="form-control"
+                    >
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="quadro-acompanhamento">
+
+            <div class="titulo-quadro">
+
+                <i class="bi bi-list-check"></i>
+
+                <h3>Inspeções</h3>
+
+            </div>
+
+
+            <div class="table-responsive">
+
+                <table class="table tabela-acompanhamento">
+
+                    <thead>
+
+                        <tr>
+
+                            <th>Código</th>
+
+                            <th>Cliente</th>
+
+                            <th>Equipamento</th>
+
+                            <th>Técnico</th>
+
+                            <th>Data</th>
+
+                            <th>Prioridade</th>
+
+                            <th>Status</th>
+
+                            <th>Ações</th>
+
+                        </tr>
+
+                    </thead>
+
+
+                    <tbody>
+
+
+                        <tr>
+
+                            <td>INS-001</td>
+
+                            <td>Roberto do gas</td>
+
+                            <td>Compressor</td>
+
+                            <td>Robertao</td>
+
+                            <td>30/09/2026</td>
+
+                            <td>
+                                <span class="prioridade-alta">
+                                    Alta
+                                </span>
+                            </td>
+
+                            <td>
+                                <span class="status-planejada">
+                                    Planejada
+                                </span>
+                            </td>
+
+                            <td>
+
+                                <i class="bi bi-eye acao-acompanhamento"></i>
+
+                                <i class="bi bi-pencil acao-acompanhamento"></i>
+
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>INS-002</td>
+
+                            <td>Lucio equipamentos</td>
+
+                            <td>Empilhadeira</td>
+
+                            <td>Lucio</td>
+
+                            <td>02/10/2026</td>
+
+                            <td>
+                                <span class="prioridade-media">
+                                    Média
+                                </span>
+                            </td>
+
+                            <td>
+                                <span class="status-andamento">
+                                    Em andamento
+                                </span>
+                            </td>
+
+                            <td>
+
+                                <i class="bi bi-eye acao-acompanhamento"></i>
+
+                                <i class="bi bi-pencil acao-acompanhamento"></i>
+
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>INS-003</td>
+
+                            <td>Industria borabil</td>
+
+                            <td>Esteira Industrial</td>
+
+                            <td>Bill</td>
+
+                            <td>05/10/2026</td>
+
+                            <td>
+                                <span class="prioridade-baixa">
+                                    Baixa
+                                </span>
+                            </td>
+
+                            <td>
+                                <span class="status-revisao">
+                                    Aguardando revisão
+                                </span>
+                            </td>
+
+                            <td>
+
+                                <i class="bi bi-eye acao-acompanhamento"></i>
+
+                                <i class="bi bi-pencil acao-acompanhamento"></i>
+
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>INS-004</td>
+
+                            <td>Davi corpC</td>
+
+                            <td>Motor Industrial</td>
+
+                            <td>Davi Silva</td>
+
+                            <td>07/10/2026</td>
+
+                            <td>
+                                <span class="prioridade-alta">
+                                    Alta
+                                </span>
+                            </td>
+
+                            <td>
+                                <span class="status-aprovada">
+                                    Aprovada
+                                </span>
+                            </td>
+
+                            <td>
+
+                                <i class="bi bi-eye acao-acompanhamento"></i>
+
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>INS-005</td>
+
+                            <td>Indústria porcao</td>
+
+                            <td>Caldeira</td>
+
+                            <td>jailson</td>
+
+                            <td>10/10/2026</td>
+
+                            <td>
+                                <span class="prioridade-alta">
+                                    Alta
+                                </span>
+                            </td>
+
+                            <td>
+                                <span class="status-reprovada">
+                                    Reprovada
+                                </span>
+                            </td>
+
+                            <td>
+
+                                <i class="bi bi-eye acao-acompanhamento"></i>
+
+                                <i class="bi bi-pencil acao-acompanhamento"></i>
+
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>INS-006</td>
+
+                            <td>Metalúrgica Itu</td>
+
+                            <td>Gerador</td>
+
+                            <td>Marcos Santos</td>
+
+                            <td>12/10/2026</td>
+
+                            <td>
+                                <span class="prioridade-media">
+                                    Média
+                                </span>
+                            </td>
+
+                            <td>
+                                <span class="status-cancelada">
+                                    Cancelada
+                                </span>
+                            </td>
+
+                            <td>
+
+                                <i class="bi bi-eye acao-acompanhamento"></i>
+
+                            </td>
+
+                        </tr>
+
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </div>
+
+
+    </main>
+
+
+</body>
+
+</html>
