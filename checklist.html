@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard / FieldOps</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+        <div class="menu-lateral">
+
+    <h1>Ordem de Serviço</h1>
+
+    <div class="menu-opcoes">
+
+        <a href="index.html" class="menu-opcao-inicial">
+            Menu Inicial
+        </a>
+
+        <a href="clientes.html" class="opcao-clientes">
+            <i class="bi bi-people-fill"></i>
+            Clientes
+        </a>
+
+        <a href="inspecoes.html" class="opcao-Inspecoes">
+            <i class="bi bi-search"></i>
+            Inspeções
+        </a>
+        <a href="acompanhamento.html" class="opcao-acompanhamento">
+                <i class="bi bi-clipboard-data"></i>
+                Acompanhamento
+            </a>
+
+    </div>
+
+</div>
+
+     <header class="cabecalho">
+
+        <div class="titulo-dashboard">
+            <i class="bi bi-clipboard-check"></i>
+            <h2>Ordem de serviço</h2>
+        </div>
+
+        <div class="usuario">
+            <i class="bi bi-person-circle"></i>
+            <span>Usuário</span>
+        </div>
+
+    </header>
+
+    <main class="area-checklist">
+
+    <div class="titulo-checklist">
+
+        <div>
+            <h3>Modelos de Checklist</h3>
+
+            <p>
+                Gerencie os modelos utilizados nas inspeções do FieldOps.
+            </p>
+        </div>
+
+        <button class="btn-novo-checklist">
+            <i class="bi bi-plus-lg"></i>
+            Novo checklist
+        </button>
+
+    </div>
+
+
+    <div class="barra-busca-checklist">
+
+        <i class="bi bi-search"></i>
+
+        <input
+            type="text"
+            placeholder="Buscar checklist..."
+        >
+
+    </div>
+
+    <div class="row g-4">
+
+        <div class="col-12 col-md-6 col-xl-4">
+
+            <div class="card-checklist">
+
+                <div class="topo-checklist">
+
+                    <div class="icone-checklist">
+                        <i class="bi bi-tools"></i>
+                    </div>
+
+                    <span class="status-cliente ativo">
+                        Publicado
+                    </span>
+
+                </div>
+
+                <h4>Manutenção Preventiva</h4>
+
+                <p class="descricao-checklist">
+                    Checklist para inspeções de manutenção preventiva dos equipamentos.
+                </p>
+
+                <div class="info-checklist">
+
+                    <div>
+                        <span>Itens</span>
+                        <strong>15</strong>
+                    </div>
+
+                    <div>
+                        <span>Versão</span>
+                        <strong>2.0</strong>
+                    </div>
+
+                </div>
+
+                <div class="acoes-checklist">
+
+                    <button>
+                        <i class="bi bi-pencil"></i>
+                        Editar
+                    </button>
+
+                    <button>
+                        <i class="bi bi-copy"></i>
+                        Duplicar
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="col-12 col-md-6 col-xl-4">
+
+            <div class="card-checklist">
+
+                <div class="topo-checklist">
+
+                    <div class="icone-checklist">
+                        <i class="bi bi-shield-check"></i>
+                    </div>
+
+                    <span class="status-cliente inativo">
+                        Rascunho
+                    </span>
+
+                </div>
+
+                <h4>Segurança Industrial</h4>
+
+                <p class="descricao-checklist">
+                    Verificação das condições de segurança do local de trabalho.
+                </p>
+
+                <div class="info-checklist">
+
+                    <div>
+                        <span>Itens</span>
+                        <strong>22</strong>
+                    </div>
+
+                    <div>
+                        <span>Versão</span>
+                        <strong>1.3</strong>
+                    </div>
+
+                </div>
+
+                <div class="acoes-checklist">
+
+                    <button>
+                        <i class="bi bi-pencil"></i>
+                        Editar
+                    </button>
+
+                    <button>
+                        <i class="bi bi-copy"></i>
+                        Duplicar
+                    </button>
+
+                    <button>
+                        <i class="bi bi-upload"></i>
+                        Publicar
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="col-12 col-md-6 col-xl-4">
+
+            <div class="card-checklist">
+
+                <div class="topo-checklist">
+
+                    <div class="icone-checklist">
+                        <i class="bi bi-cpu"></i>
+                    </div>
+
+                    <span class="status-cliente ativo">
+                        Publicado
+                    </span>
+
+                </div>
+
+                <h4>Inspeção de Equipamentos</h4>
+
+                <p class="descricao-checklist">
+                    Avaliação das condições de funcionamento dos equipamentos.
+                </p>
+
+                <div class="info-checklist">
+
+                    <div>
+                        <span>Itens</span>
+                        <strong>18</strong>
+                    </div>
+
+                    <div>
+                        <span>Versão</span>
+                        <strong>1.0</strong>
+                    </div>
+
+                </div>
+
+                <div class="acoes-checklist">
+
+                    <button>
+                        <i class="bi bi-pencil"></i>
+                        Editar
+                    </button>
+
+                    <button>
+                        <i class="bi bi-copy"></i>
+                        Duplicar
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</main>
+
+</body>
+</html>
