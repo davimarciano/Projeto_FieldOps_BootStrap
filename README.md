@@ -1,5 +1,7 @@
 # Field Ops - Painel do Supervisor
 
+Nome:Davi da Silva Marciano.
+
 ## Sobre o projeto
 
 O Field Ops é um protótipo de sistema desenvolvido para auxiliar na gestão de inspeções realizadas em campo.
@@ -42,4 +44,7 @@ Projeto FieldOps/
 ├── clientes.html
 ├── style.css
 ├── README.md
+├──acompanhamento.html
+├──checklist.html
+├──inspecoes.html
 └── Projeto_FieldOps_BootStrap/
